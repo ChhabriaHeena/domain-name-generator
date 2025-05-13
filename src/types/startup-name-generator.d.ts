@@ -1,4 +1,4 @@
 declare module '@rstacruz/startup-name-generator'{
-    const startupNameGenerator: ()=> any;
+    const startupNameGenerator: (keyword?: string)=> any;
     export default startupNameGenerator
 }

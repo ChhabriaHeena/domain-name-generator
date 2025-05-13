@@ -15,7 +15,7 @@ function App() {
     suggestedNames: []
   });
 
-  const name = startupNameGenerator()
+  const name = startupNameGenerator;
   useEffect(() => {
     setDomain((prev: any) => ({
       ...prev,
