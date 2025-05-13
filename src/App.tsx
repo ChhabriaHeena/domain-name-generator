@@ -3,7 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import ResultContainer from './components/ResultContainer'
 import Search from './components/Search'
-import name from '@rstacruz/startup-name-generator'
+import startupNameGenerator from '@rstacruz/startup-name-generator'
 import { useDebounce } from 'use-debounce'
 
 
@@ -15,6 +15,7 @@ function App() {
     suggestedNames: []
   });
 
+  const name = startupNameGenerator()
   useEffect(() => {
     setDomain((prev: any) => ({
       ...prev,
